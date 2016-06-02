@@ -1,0 +1,250 @@
+html, body {
+    background: #F0F8FF;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+}
+
+.header {
+    display: inline;
+    background: #F0F8FF;
+    max-height: 5%;
+    font-family: Impact;
+    font-size: 50px;
+    color: #87CEEB;
+}
+
+.menu-icon {
+    position: absolute;
+    height: 40px;
+}
+
+.sub-menu {
+    display: none;
+    padding: 0px 8px;
+    padding-top: 14px;
+}
+
+.menu:hover .sub-menu {
+    position: absolute;
+    display: block;
+    background: #F0F8FF;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    top: 90px;
+    left: 37px;
+    z-index: 10;
+}
+
+.condition {
+    position: absolute;
+    height: 32px;
+    top: 105px;
+    left: 12px;
+}
+
+.container {
+    background: white;
+    overflow-y: scroll;
+    min-height: 83%;
+    max-height: 83%;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.container ul li {
+    padding-right: 30%;
+}
+
+.container .my-message {
+    padding-right: 0;
+    padding-left: 30%;
+}
+
+.my-message .message {
+    background: #87CEEB;
+}
+
+.message {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.container .message:hover{
+    background: #e5e6e6;
+}
+
+.message-avatar {
+    position: absolute;
+    top: -10px;
+    left: -40px;
+    width: 70px;
+    height: 70px;
+    background: #7f8c8c url("//images/default_avatar.png") no-repeat 50% 50%;
+}
+
+.message-author {
+    padding-left: 45px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    word-wrap:break-word;
+}
+
+.message-author:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.message-text {
+    padding: 12px;
+    padding-left: 45px;
+    background-color: #f8f8f8;
+    border-bottom: 5px solid #e5e6e6;
+    word-wrap:break-word;
+}
+
+.message-date {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #bdc3c7;
+}
+
+.message-delete {
+    display: none;
+}
+
+.message-edit {
+    display: none;
+}
+
+.user-avatar {
+    width: 70px;
+    height: 75px;
+    margin-top: 7px;
+    background: #7f8c8c url("//images/default_avatar.png") no-repeat 50% 50%;
+}
+
+textarea {
+    position: absolute;
+    left: 80px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background: #f8f8f8;
+    width: 81%;
+    height: 8%;
+    min-height: 7vh;
+    resize: none;
+}
+
+.send-btn {
+    position: absolute;
+    left: 85%;
+    margin-left: 5px;
+    width: 14%;
+    height: 8%;
+    padding:5px 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background:#87CEEB;
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px;
+    word-wrap:break-word;
+}
+
+.send-btn:hover {
+    background: #AFEEEE;
+}
+
+.edit_area {
+    display: none;
+    position: absolute;
+    margin: 2px;
+}
+
+.edit_area_on {
+    display: block;
+}
+
+.edit-field {
+    width: 96%;
+    margin: 2px;
+}
+
+.edit-button {
+    margin: 5px 1px;
+    color: #87CEEB;
+    font-weight: bold;
+    background: #f8f8f8;
+    border:0 none;
+    cursor:pointer;
+    border-radius: 3px;
+    word-wrap:break-word;
+}
+
+.my-message .message-delete {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background: url("//images/delete.png");
+}
+
+.my-message .message-edit {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    background: url("//images/edit.png");
+}
+
+.deleted > .message-text {
+    font-style: italic;
+}
+
+input[type=submit] {
+    padding: 0 14px;
+    height: 29px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #527881;
+    text-shadow: 0 1px #e3f1f1;
+    background: #cde5ef;
+    border: 1px solid;
+    border-color: #b4ccce #b3c0c8 #9eb9c2;
+    border-radius: 16px;
+    outline: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background-image: -webkit-linear-gradient(top, #edf5f8, #cde5ef);
+    background-image: -moz-linear-gradient(top, #edf5f8, #cde5ef);
+    background-image: -o-linear-gradient(top, #edf5f8, #cde5ef);
+    background-image: linear-gradient(to bottom, #edf5f8, #cde5ef);
+    -webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+input[type=submit]:active {
+    background: #cde5ef;
+    border-color: #9eb9c2 #b3c0c8 #b4ccce;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+}

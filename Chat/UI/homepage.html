@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Chat by Shymanovich Vlad</title>
+		<link href="css/style.css" rel="stylesheet">
+		<script src="scripts/sender.js"></script>
+		<script src="scripts/storage.js"></script>
+    </head>
+    <body>
+		<h1 class="header">
+			by Shymanovich Vlad
+		</h1>
+	   
+		<form action="" method="">
+			<div class="container">
+				<div class="menu">
+					<img src="menu.png" class="menu-icon">
+					<div class="sub-menu">
+						<input type="text" placeholder="Nickname" id="nickname" name="nickname"> 
+					</div>
+				</div>
+				
+				<div class="server">
+					<img class="condition">
+				</div>
+			  
+				<ul id="msg_cnt">
+					<li class="my-message">
+						<div class="message">
+							<div class="message-avatar"></div>
+							<div class="message-author">QWE</div>
+							<div class="message-text">
+								<div class="text">test2</div>
+								<div class="message-date">04:08:15 03.06.2016</div>
+							</div>
+							<input type="button" onclick="delete_msg(this)" alt="D" class="message-delete">
+							<input type="button" onclick="edit_msg(this)" alt="E" class="message-edit">							
+							<div class="edit_area">
+								<input type="text" class="edit-field">
+								<input type="button" onclick="confirm_change(this)" value="OK">
+							</div>							
+						</div>
+					</li>
+					
+					<li>
+						<div class="message">
+							<div class="message-avatar"></div>
+							<div class="message-author">PRO</div>
+							<div class="message-text">
+								<div class="text">test2</div>
+								<div class="message-date">04:08:15 03.06.2016</div>
+							</div>
+							<input type="button" onclick="delete_msg(this)" alt="D" class="message-delete">
+							<input type="button" onclick="edit_msg(this)" alt="E" class="message-edit">							
+							<div class="edit_area">
+								<input type="text" class="edit-field">
+								<input type="button" onclick="confirm_change(this)" value="OK">
+							</div>	
+						</div>
+					</li>
+					
+					<li>
+						<div class="message">
+							<div class="message-avatar"></div>
+							<div class="message-author">Pro</div>
+							<div class="message-text">
+								<div class="text">test2</div>
+								<div class="message-date">04:08:15 03.06.2016</div>
+							</div>
+							<input type="button" onclick="delete_msg(this)" alt="D" class="message-delete">
+							<input type="button" onclick="edit_msg(this)" alt="E" class="message-edit">							
+							<div class="edit_area">
+								<input type="text" class="edit-field">
+								<input type="button" onclick="confirm_change(this)" value="OK">
+							</div>	
+						</div>
+					</li>
+					
+					<li class="my-message">
+						<div class="message">
+							<div class="message-avatar"></div>
+							<div class="message-author">QWE</div>
+							<div class="message-text">
+								<div class="text">test2</div>
+								<div class="message-date">16:23:42 28.02.2016</div>
+							</div>
+							<input type="button" onclick="delete_msg(this)" alt="D" class="message-delete">
+							<input type="button" onclick="edit_msg(this)" alt="E" class="message-edit">							
+							<div class="edit_area">
+								<input type="text" class="edit-field">
+								<input type="button" onclick="confirm_change(this)" value="OK">
+							</div>	
+						</div>
+					</li>
+					
+					<li>
+						<div class="message deleted">
+							<div class="message-avatar"></div>
+							<div class="message-author">PRO</div>
+							<div class="message-text">
+								<div class="text">test2</div>
+								<div class="message-date">16:23:42 03.06.2016</div>
+							</div>
+							<input type="button" onclick="delete_msg(this)" alt="D" class="message-delete">
+							<input type="button" onclick="edit_msg(this)" alt="E" class="message-edit">							
+							<div class="edit_area">
+								<input type="text" class="edit-field">
+								<input type="button" onclick="confirm_change(this)" value="OK">
+							</div>	
+						</div>
+					</li>
+					
+					<li class="my-message">
+						<div class="message">
+							<div class="message-avatar"></div>
+							<div class="message-author">QWE</div>
+							<div class="message-text">
+								<div class="text">test2</div>
+								<div class="message-date">16:23:42 03.06.2016</div>
+							</div>
+							<input type="button" onclick="delete_msg(this)" alt="D" class="message-delete">
+							<input type="button" onclick="edit_msg(this)" alt="E" class="message-edit">							
+							<div class="edit_area">
+								<input type="text" class="edit-field">
+								<input type="button" onclick="confirm_change(this)" value="OK">
+							</div>	
+						</div>
+					</li>					
+				</ul>
+			</div>
+			<div>
+				<textarea id="msg_area"></textarea>
+				<input id="send-btn" type="button" onclick="send_msg()" value="Send" class="send-btn">
+			</div>
+		</form>
+    </body>
+</html>
